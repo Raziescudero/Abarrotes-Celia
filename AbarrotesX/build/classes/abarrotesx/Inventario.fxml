@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="paneInventario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abarrotesx.Inventario">
+   <children>
+      <TableView fx:id="TabInventario" layoutX="8.0" layoutY="14.0" prefHeight="344.0" prefWidth="552.0">
+        <columns>
+          <TableColumn fx:id="TabCod" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="TabPro" prefWidth="129.0" text="Producto" />
+            <TableColumn fx:id="TabCant" prefWidth="65.0" text="Cantidad" />
+            <TableColumn fx:id="TabPreC" prefWidth="74.0" text="Precio Compra" />
+            <TableColumn fx:id="TabPreV" prefWidth="73.0" text="Precio Venta" />
+            <TableColumn fx:id="TabCate" prefWidth="85.0" text="Categoria" />
+            <TableColumn fx:id="TabPeso" prefWidth="50.0" text="Peso" />
+        </columns>
+      </TableView>
+      <Button fx:id="BTAgregar" layoutX="570.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#menuAgregar" text="Agregar" />
+      <Button fx:id="BEliminar" layoutX="570.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#eliminar" text="Eliminar" />
+      <Button fx:id="BModi" layoutX="570.0" layoutY="161.0" mnemonicParsing="false" onMouseClicked="#menuModificar" text="Modificar" />
+      <Button id="BIAct" layoutX="569.0" layoutY="248.0" mnemonicParsing="false" onMouseClicked="#refresh" text="Actualizar" />
+      <TextField fx:id="MCod" layoutX="123.0" layoutY="368.0" />
+      <TextField fx:id="MCant" layoutX="123.0" layoutY="447.0" />
+      <TextField fx:id="MPro" layoutX="123.0" layoutY="408.0" />
+      <TextField fx:id="MPreC" layoutX="123.0" layoutY="492.0" />
+      <TextField fx:id="MPreV" layoutX="386.0" layoutY="367.0" />
+      <TextField fx:id="MCate" layoutX="386.0" layoutY="408.0" />
+      <TextField fx:id="MPeso" layoutX="386.0" layoutY="447.0" />
+      <Label fx:id="LCod" layoutX="47.0" layoutY="371.0" text="Código" />
+      <Label fx:id="LCant" layoutX="42.0" layoutY="451.0" text="Cantidad" />
+      <Label fx:id="LPreV" layoutX="295.0" layoutY="371.0" text="Precio de venta" />
+      <Label fx:id="LPro" layoutX="42.0" layoutY="412.0" text="Producto" />
+      <Label fx:id="LPreC" layoutX="19.0" layoutY="496.0" text="Precio de compra" />
+      <Label fx:id="LCate" layoutX="310.0" layoutY="412.0" text="Categoria" />
+      <Label fx:id="LPeso" layoutX="323.0" layoutY="451.0" text="Peso" />
+      <Button fx:id="BMGuardar" layoutX="431.0" layoutY="492.0" mnemonicParsing="false" onMouseClicked="#guardar" text="Guardar" />
+   </children>
+</Pane>

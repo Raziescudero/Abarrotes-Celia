@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="CCant" fx:id="paneVenta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abarrotesx.VentaController">
+   <children>
+      <TableView fx:id="TVent" layoutX="14.0" layoutY="14.0" prefHeight="197.0" prefWidth="565.0">
+     <columns>
+          <TableColumn fx:id="TavInv" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="TavPro" prefWidth="223.0" text="Producto" />
+            <TableColumn fx:id="TavCant" prefWidth="57.0" text="Cantidad" />
+            <TableColumn fx:id="TavPreV" prefWidth="56.0" text="Precio" />
+            <TableColumn fx:id="TavCate" prefWidth="98.0" text="Categoria" />
+            <TableColumn fx:id="TavPeso" prefWidth="55.0" text="Peso" />
+        </columns>
+      </TableView>
+      <Button fx:id="BCarrito" layoutX="470.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#carrito" text="Agregar al carrito" />
+      <Label id="LTotal" layoutX="358.0" layoutY="343.0" text="Total:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TTotal" layoutX="419.0" layoutY="340.0" prefHeight="25.0" prefWidth="102.0" />
+      <Button fx:id="BPagar" layoutX="447.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#vender" text="Pagar" />
+      <TableView fx:id="TCarrito" layoutX="14.0" layoutY="268.0" prefHeight="144.0" prefWidth="284.0">
+        <columns>
+          <TableColumn fx:id="TCCod" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="TCProd" prefWidth="153.0" text="Producto" />
+            <TableColumn fx:id="TCPrecio" prefWidth="54.0" text="Precio" />
+        </columns>
+      </TableView>
+      <Label id="LCarrito" layoutX="43.0" layoutY="239.0" text="Carrito">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

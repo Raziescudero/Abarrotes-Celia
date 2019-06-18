@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneHistorial" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abarrotesx.Ventanas">
+   <children>
+      <TableView fx:id="Tahv" layoutX="78.0" layoutY="62.0" prefHeight="236.0" prefWidth="444.0">
+        <columns>
+          <TableColumn fx:id="TahIDVenta" prefWidth="87.0" text="ID Venta" />
+          <TableColumn fx:id="TahvCodPro" prefWidth="104.0" text="Código producto" />
+            <TableColumn fx:id="TahvfechaV" minWidth="9.0" prefWidth="105.0" text="Fecha de venta" />
+            <TableColumn fx:id="TahvCant" prefWidth="78.0" text="Cantidad" />
+            <TableColumn fx:id="TahvTotal" prefWidth="69.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="221.0" layoutY="14.0" text="Historial de ventas">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    
+   </children>
+</Pane>

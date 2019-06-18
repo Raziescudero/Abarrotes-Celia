@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="paneAgregar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abarrotesx.Agregar">
+   <children>
+      <TextField fx:id="TCod" layoutX="164.0" layoutY="42.0" />
+      <Label id="LCod" layoutX="97.0" layoutY="46.0" text="Código" />
+      <Label id="LPro" layoutX="92.0" layoutY="80.0" text="Producto" />
+      <Label id="LCant" layoutX="92.0" layoutY="120.0" text="Cantidad" />
+      <Label id="LPreC" layoutX="69.0" layoutY="163.0" text="Precio Compra" />
+      <TextField fx:id="TPro" layoutX="164.0" layoutY="76.0" />
+      <TextField fx:id="TCant" layoutX="164.0" layoutY="116.0" />
+      <TextField fx:id="TPrec" layoutX="164.0" layoutY="159.0" />
+      <TextField fx:id="TPreV" layoutX="164.0" layoutY="200.0" />
+      <TextField fx:id="TCate" layoutX="164.0" layoutY="241.0" />
+      <TextField fx:id="TPeso" layoutX="164.0" layoutY="281.0" />
+      <Label id="LPreV" layoutX="82.0" layoutY="204.0" text="Precio Venta" />
+      <Label id="LCate" layoutX="90.0" layoutY="245.0" text="Categoria" />
+      <Label id="LPeso" layoutX="103.0" layoutY="285.0" text="Peso" />
+      <Button fx:id="BAGuardar" layoutX="193.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#crear" prefHeight="35.0" prefWidth="90.0" text="Guardar" />
+      <Label id="LAgregar" layoutX="367.0" layoutY="37.0" text="Agregar Producto">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BAVolver" layoutX="444.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#volver" text="Volver" />
+   </children>
+</Pane>
